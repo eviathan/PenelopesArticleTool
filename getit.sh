@@ -27,7 +27,7 @@ echo "	   (＃￣□￣)o━∈・・━━━━☆               (⊃｡•́�
 echo "--------------------------------------------------------------------"
 echo "Beginning sanitisation ..."
 
-find . -name '*.html' | xargs -n1 sed -i.old '/<script.*<\/script>/d'
-
+find . -name '*.html' | xargs -n1 sed -i.old.html '/<script.*<\/script>/d'
+#find . -name '*.html.old' | xargs -n1 rm
 echo "Sanitisation Complete!"
 echo "--------------------------------------------------------------------"
